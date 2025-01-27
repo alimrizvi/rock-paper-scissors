@@ -37,7 +37,7 @@ function playGame() {
     playRound()
     if (humanScore>computerScore) {console.log('Human Wins '+ humanScore + ':'+computerScore)}
     else if (humanScore==computerScore) {console.log('Both Draw '+ humanScore + ':'+computerScore)}
-    else if (humanScore<computerScore) {console.log('Computer Wins '+ computerScore + ':'+humanScore)}
+    else if (humanScore<computerScore) {console.log('Computer Wins '+ computerScore + ':'+humanScore)};
 }
 
 playGame()
