@@ -19,11 +19,11 @@ function playRound(e) {
     }
     else if ((humanChoice=='Rock' && computerChoice=='Paper')||(humanChoice=='Paper' && computerChoice=='Scissor')||(humanChoice=='Scissor' && computerChoice=='Rock')) {
         result = 'You Lost! '+ computerChoice + ' beats '  + humanChoice
-        console.log(result)
+        computerScore+=1
     }
-    else if ((humanChoice=='Rock' && computerChoice=='Paper')||(humanChoice=='Paper' && computerChoice=='Rock')||(humanChoice=='Scissor' && computerChoice=='Paper')) {
+    else if ((humanChoice=='Rock' && computerChoice=='Scissor')||(humanChoice=='Paper' && computerChoice=='Rock')||(humanChoice=='Scissor' && computerChoice=='Paper')) {
         result = ('You Won! '+ humanChoice + ' beats '  + computerChoice)
-        console.log(result)
+        humanScore+=1
     }
     updateScore(result)
 }
